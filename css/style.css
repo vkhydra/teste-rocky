@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%22");
+
+:root {
+  --branco: #fff;
+  --amarelo: #efe60b;
+  --preto: #000;
+  --cinza1: #0000001a;
+  --cinza2: #00000029;
+  --cinza3: #d1d1d1;
+  --cinza4: #0000004d;
+  --cinza5: #818181;
+  --cinza6: #707070;
+  --cinza7: #000000e6;
+  --azul: #1cd4e9;
+  --azul-hover: #17b5c7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  border: 0;
+  background-color: var(--azul);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--branco);
+  transition: background, box-shadow 1s;
+}
+
+body {
+  width: 100vw;
+}
+
+header {
+  background-image: url(../img/mobile/s1mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 40px;
+}
+
+header img {
+  width: 228px;
+  height: 57px;
+  margin: 0 auto;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+header h1 {
+  text-align: center;
+  color: var(--branco);
+  text-transform: uppercase;
+  font-size: 88px;
+  font-weight: 800;
+}
+
+header p {
+  text-align: center;
+  color: var(--branco);
+  max-width: 65%;
+  margin: 0 auto;
+  line-height: 30pt;
+  font-size: 22px;
+}
+
+header span {
+  color: var(--amarelo);
+}
+
+header button {
+  border-radius: 42px;
+  padding: 10px;
+  width: 400px;
+  margin: 0 auto;
+  height: 60px;
+  font-size: 22px;
+}
+
+header button:hover {
+  background-color: var(--azul-hover);
+  box-shadow: 2px 2px 2px #fff;
+}
+

@@ -1,0 +1,20 @@
+{
+  "name": "teste-rocky",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkhydra/teste-rocky.git"
+  },
+  "keywords": ["Rocky"],
+  "author": "Victor Bruno Kulessa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vkhydra/teste-rocky/issues"
+  },
+  "homepage": "https://github.com/vkhydra/teste-rocky#readme"
+}
