@@ -19,7 +19,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
 }
 
 button {
@@ -32,7 +31,12 @@ button {
   transition: background, box-shadow 1s;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
+  font-family: "Montserrat", sans-serif;
   width: 100vw;
 }
 
@@ -64,7 +68,7 @@ header h1 {
   text-align: center;
   color: var(--branco);
   text-transform: uppercase;
-  font-size: 88px;
+  font-size: 90px;
   font-weight: 800;
 }
 
@@ -74,7 +78,7 @@ header p {
   max-width: 65%;
   margin: 0 auto;
   line-height: 30pt;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 header span {
@@ -84,14 +88,187 @@ header span {
 header button {
   border-radius: 42px;
   padding: 10px;
-  width: 400px;
+  width: 420px;
   margin: 0 auto;
-  height: 60px;
-  font-size: 22px;
+  height: 80px;
+  font-size: 20px;
 }
 
 header button:hover {
   background-color: var(--azul-hover);
-  box-shadow: 2px 2px 2px #fff;
+  box-shadow: 2px 2px 2px #ccc;
 }
 
+section {
+  padding: 40px;
+  margin-top: 100px;
+}
+
+section h1 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-size: 70px;
+}
+
+section article {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 40px;
+  box-shadow: 0px 0px 50px 0px #0000004f;
+  height: 800px;
+  justify-content: space-around;
+}
+
+section article p {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+section article p:nth-child(2) {
+  font-weight: bold;
+}
+
+footer {
+  border-top: 40px solid var(--amarelo);
+  background-color: var(--cinza7);
+  border-bottom: 40px solid var(--amarelo);
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.logos_rodape {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.logos_rodape img {
+  width: 228px;
+  height: 57px;
+}
+
+.logos_rodape div:nth-child(2) {
+  display: flex;
+  width: 35%;
+  justify-content: space-around;
+}
+
+.logos_rodape div i {
+  color: var(--branco);
+}
+
+.logos_rodape div i:nth-child(2) {
+  color: #000000e6;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.contato_rodape {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.contato_rodape i {
+  color: var(--amarelo);
+  margin-right: 20px;
+  align-self: center;
+}
+
+.contato_rodape span {
+  color: var(--branco);
+  font-size: 32px;
+  margin-right: 30px;
+}
+
+.contato_rodape a {
+  color: var(--branco);
+  font-size: 32px;
+  margin-right: 30px;
+}
+
+.contato_rodape a:nth-child(2) {
+  border-right: 10px solid var(--white);
+}
+
+.local-rodape {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.local-rodape img {
+  width: 32px;
+  height: 32px;
+  fill: var(--amarelo);
+  align-self: center;
+  margin-right: 20px;
+}
+
+.local-rodape a {
+  display: flex;
+  width: 100%;
+  color: var(--branco);
+  font-size: 32px;
+}
+
+.rodape-texto {
+  margin: 30px 20px;
+}
+
+.rodape-texto p {
+  margin-top: 20px;
+  color: var(--branco);
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.rodape-texto p:nth-child(2) {
+  color: var(--amarelo);
+}
+
+.rodape-texto p:nth-child(3) {
+  color: var(--azul);
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+footer form input {
+  height: 100px;
+  margin: 20px 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+footer form textarea {
+  margin: 20px 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+footer form input::-webkit-input-placeholder,
+footer form textarea::-webkit-input-placeholder {
+  opacity: 0.4;
+}
+
+footer form button {
+  height: 170px;
+  margin: 20px 0 0 0;
+  font-size: 70px;
+  padding: 10px;
+  text-transform: uppercase;
+}
