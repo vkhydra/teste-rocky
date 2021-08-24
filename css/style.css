@@ -57,14 +57,32 @@ header img {
   margin: 0 auto;
 }
 
-header div {
+.click_hamburguer {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 57px;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.line {
+  width: 80px;
+  height: 9px;
+  border-radius: 15px;
+  background-color: var(--branco);
+}
+
+.text_header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
 }
 
-header h1 {
+.text_header h1 {
   text-align: center;
   color: var(--branco);
   text-transform: uppercase;
@@ -72,7 +90,7 @@ header h1 {
   font-weight: 800;
 }
 
-header p {
+.text_header p {
   text-align: center;
   color: var(--branco);
   max-width: 65%;
@@ -81,11 +99,11 @@ header p {
   font-size: 24px;
 }
 
-header span {
+.text_header span {
   color: var(--amarelo);
 }
 
-header button {
+.text_header button {
   border-radius: 42px;
   padding: 10px;
   width: 420px;
@@ -94,7 +112,7 @@ header button {
   font-size: 20px;
 }
 
-header button:hover {
+.text_header button:hover {
   background-color: var(--azul-hover);
   box-shadow: 2px 2px 2px #ccc;
 }
@@ -296,4 +314,12 @@ footer form button {
   font-size: 70px;
   padding: 10px;
   text-transform: uppercase;
+}
+
+@media only screen and (min-device-width: 992px) and (min-width: 992px) {
+  header {
+    background-image: url(../img/web/s1ft1.png);
+  }
+  header img {
+  }
 }
