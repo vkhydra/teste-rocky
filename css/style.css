@@ -51,13 +51,45 @@ header {
   padding: 40px;
 }
 
-header img {
+nav ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px);
+  padding: 60px;
+  border-radius: 0 40px 40px 0;
+}
+
+nav ul > li {
+  border-bottom: 1px solid var(--branco);
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0;
+}
+
+nav ul li:last-child {
+  border-bottom: none;
+}
+
+li > a {
+  color: var(--branco);
+  font-weight: 200;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+nav header img {
   width: 228px;
   height: 57px;
   margin: 0 auto;
 }
 
-.click_hamburguer {
+#click_hamburguer {
   position: absolute;
   left: 40px;
   top: 40px;
@@ -73,6 +105,24 @@ header img {
   height: 9px;
   border-radius: 15px;
   background-color: var(--branco);
+}
+
+#click_close {
+  height: 57px;
+  cursor: pointer;
+}
+
+.close_line {
+  position: fixed;
+  width: 80px;
+  height: 9px;
+  border-radius: 15px;
+  background-color: var(--branco);
+  transform: rotate(45deg);
+}
+
+.close_line:last-child {
+  transform: rotate(-45deg);
 }
 
 .text_header {
@@ -319,7 +369,5 @@ footer form button {
 @media only screen and (min-device-width: 992px) and (min-width: 992px) {
   header {
     background-image: url(../img/web/s1ft1.png);
-  }
-  header img {
   }
 }
